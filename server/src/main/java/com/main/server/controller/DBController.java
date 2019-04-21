@@ -1,4 +1,4 @@
-package com.main.controller;
+package com.main.server.controller;
 
 import java.util.Iterator;
 import java.util.List;

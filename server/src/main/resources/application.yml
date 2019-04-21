@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: dev
+    include: mybatisplus,shiro
+  datasource:
+    url: jdbc:mysql://47.100.9.221:3306/IOT
+    username: root
+    password: ab970927
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#mybatis:
+#  mapperLocations: classpath:/mapper/*Mapper.xml   
+#  typeAliasesPackage: com.main.entity
+  

@@ -1,4 +1,4 @@
-package com.main.demo;
+package com.main.server;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
