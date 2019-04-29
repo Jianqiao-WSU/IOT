@@ -6,6 +6,9 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  created () {
+    document.title = '物联网数据服务平台'
+  }
 }
 </script>
