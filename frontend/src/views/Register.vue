@@ -84,11 +84,13 @@ export default {
               console.log(response)
               if (response.data.msg === 'ok') {
                 this.$message({
-                  message: '注册成功！',
+                  message: '注册成功，请登录！',
                   type: 'success'
                 })
+                // this.$store.commit('setToken', response.data.token)
+                // this.$store.commit('setUser', response.data.username)
                 this.$router.push({
-                  name: 'Main'
+                  name: 'Login'
                 })
               } else {
                 this.$message.error(response.data.msg)

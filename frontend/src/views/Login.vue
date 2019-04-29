@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import axios from 'axios'
-import qs from 'qs'
+// import axios from 'axios'
+// import qs from 'qs'
 
 export default {
   name: 'Login',
@@ -39,15 +39,23 @@ export default {
       }
     }
   },
+  created () {
+    if (localStorage.getItem('token')) {
+      this.$router.push({
+        name: 'Main'
+      })
+    }
+  },
   methods: {
     onSubmit (form) {
       this.$refs[form].validate((valid) => {
         if (valid) {
           // alert('submit!')
-          axios.post('http://localhost:8080/api/user/login', qs.stringify({
+          console.log(this.form)
+          this.$http.post('/api/user/login', {
             username: this.form.username,
             password: this.form.password
-          }))
+          })
             .then((response) => {
               // 判断是否登录成功
               console.log(response.data.msg)
@@ -56,6 +64,10 @@ export default {
                   message: '登录成功！',
                   type: 'success'
                 })
+                // this.$store.commit('setToken', response.data.token)
+                // this.$store.commit('setUser', response.data.username)
+                window.localStorage['token'] = JSON.stringify(response.data.token)
+                window.localStorage['user'] = response.data.username
                 this.$router.push({
                   name: 'Main'
                 })
@@ -66,7 +78,7 @@ export default {
             })
             .catch((error) => {
               // 请求失败页面弹出失败框
-              // console.log(error.response);
+              console.log(error)
               if (error) {
                 this.$message.error('登录出错!!')
               }
@@ -85,21 +97,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
