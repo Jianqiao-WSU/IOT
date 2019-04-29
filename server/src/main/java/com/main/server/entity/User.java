@@ -14,6 +14,7 @@ public class User {
     private Date created;		//用户创建时间
     private Date updated;		//用户更新时间
     private String authority;	//用户权限
+    private String resetPSW;    //用户重置密码
     
     public String getUsername() { 
     	return username; 
@@ -71,5 +72,13 @@ public class User {
     
     public void setAuthority(String authority) { 
     	this.authority =  authority; 
+    }
+    
+    public String getResetPSW() { 
+    	return resetPSW; 
+    }
+    
+    public void setResetPSW(String resetPSW) { 
+    	this.resetPSW =  resetPSW; 
     }
 }

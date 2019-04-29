@@ -39,4 +39,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 		// TODO Auto-generated method stub
 		return userMapper.insertUser(user);
 	}
+	public boolean resetPasswordUser(User user) {
+		// TODO Auto-generated method stub
+		return userMapper.resetPasswordUser(user);
+	}
 }

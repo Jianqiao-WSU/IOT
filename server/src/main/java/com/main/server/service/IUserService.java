@@ -24,5 +24,5 @@ public interface IUserService extends IService<User> {
 //	User findByID(String username);
 
 	boolean insertUser(User user);
-
+	boolean resetPasswordUser(User user);
 }

@@ -10,7 +10,7 @@
         <result property="updated"  column="updated" />
         <result property="authority"  column="authority" />
     </resultMap>
-	<select id="selectById" resultType="com.main.server.entity.User" parameterType="String">
+	<select id="selectById" resultType="com.main.server.entity.User" parameterType="Serializable">
 		select * from user where username = #{id}
 	</select>
 	<insert id="insertUser" parameterType="com.main.server.entity.User">
