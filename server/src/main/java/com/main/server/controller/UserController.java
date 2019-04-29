@@ -15,6 +15,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +24,12 @@ import org.springframework.stereotype.Controller;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.main.server.annotation.UserLoginToken;
 import com.main.server.entity.User;
 import com.main.server.mapper.UserMapper;
 import com.main.server.vo.Json;
 import com.main.server.service.*;
 
-import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.shiro.SecurityUtils;
@@ -56,6 +58,10 @@ public class UserController {
 	
 	@Autowired
     private IUserService userService;
+	@Autowired
+    TokenService tokenService;
+	
+	HttpServletResponse responce;
 	
 	@PostMapping(path = "/register")
 	public Json register(@RequestParam String body) throws IOException {
@@ -105,8 +111,6 @@ public class UserController {
     public Json login(@RequestParam String username,
                         @RequestParam String password) throws IOException {
 		String oper = "user login";
-		
-
         if (StringUtils.isEmpty(username)) {
             return Json.fail(oper, "用户名不能为空");
         }
@@ -135,9 +139,10 @@ public class UserController {
 	        if (userList == null) {throw new AuthenticationException();}
 	        log.info("user login: {}, sessionId: {}",userList.getUsername(),currentUser.getSession().getId());
 	        System.out.println("登录成功！");
-        	return Json.succ(oper).data("token", UUID.randomUUID().toString())
-                    .data("uid",userList.getUsername())
-                    .data("nick",userList.getNickname());
+	        String token = tokenService.getToken(userList);
+//	        responce.setHeader("token", token);
+        	return Json.succ(oper).data("token", token)
+                    .data("username",userList.getUsername());
         } catch ( UnknownAccountException uae ) {
         	System.out.println("用户帐号不正确");
             return Json.fail(oper,"该帐号不存在");
@@ -148,7 +153,57 @@ public class UserController {
         	System.out.println("登录出错");
             return Json.fail(oper,"登录失败："+ae.getMessage());
         }
-        
     }
 	
+	@UserLoginToken
+	@RequestMapping(path = "/resetPsw", method = RequestMethod.POST)
+    @ResponseBody
+    public Json resetPsw(@RequestParam String body) throws IOException {
+		String oper = "user reset password";
+		User user = JSON.parseObject(body, User.class);
+		System.out.println(body);
+        if (StringUtils.isEmpty(user.getUsername())) {
+        	System.out.println(Json.fail(oper, "用户帐号获取异常"));
+            return Json.fail(oper, "用户帐号获取异常");
+        }
+        if (StringUtils.isEmpty(user.getPassword())) {
+        	System.out.println(Json.fail(oper, "密码不能为空"));
+            return Json.fail(oper, "密码不能为空");
+        }
+        if (StringUtils.isEmpty(user.getResetPSW())) {
+        	System.out.println(Json.fail(oper, "重设密码不能为空"));
+            return Json.fail(oper, "重设密码不能为空");
+        }
+        Subject currentUser = SecurityUtils.getSubject();
+        try {
+        	currentUser.login(new UsernamePasswordToken(user.getUsername(), user.getPassword()));
+        	User userList = (User) currentUser.getPrincipal();
+	        if (userList == null) {throw new AuthenticationException();}
+	        log.info("user login: {}, sessionId: {}",userList.getUsername(),currentUser.getSession().getId());
+	        System.out.println("登录成功！");
+	        
+	        System.out.println(user.getResetPSW());
+	        //密码加密
+	        RandomNumberGenerator saltGen = new SecureRandomNumberGenerator();
+	        String salt = saltGen.nextBytes().toBase64();
+	        String hashedPwd = new Sha256Hash(user.getResetPSW(), salt, 1024).toBase64();
+	        user.setPassword(hashedPwd);
+	        user.setSalt(salt);
+	        user.setUpdated(new Date());
+	        System.out.println(user.getPassword());
+	        
+	        boolean success = userService.resetPasswordUser(user);
+	        
+	        System.out.println(Json.result(oper, success)
+	                .data("updated",user.getUpdated()));
+	        return Json.result(oper, success)
+	                .data("updated",user.getUpdated());
+        } catch ( IncorrectCredentialsException ice ) {
+            log.warn("用户密码不正确");
+            return Json.fail(oper,"用户密码不正确");
+        } catch ( AuthenticationException ae ) {
+        	System.out.println("登录出错");
+            return Json.fail(oper,"登录失败："+ae.getMessage());
+        }
+    }
 }
