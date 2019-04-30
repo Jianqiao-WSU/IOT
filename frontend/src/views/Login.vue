@@ -2,10 +2,10 @@
   <div>
     <el-form ref="form" :model="form" :rules="rules" style="width: 250px;">
       <el-form-item prop="username">
-        <el-input v-model="form.username" placeholder="请输入用户名"></el-input>
+        <el-input v-model="form.username" placeholder="请输入用户名" @keyup.enter.native="onSubmit('form')"></el-input>
       </el-form-item>
       <el-form-item prop="password">
-        <el-input type="password" v-model="form.password" placeholder="请输入密码"></el-input>
+        <el-input type="password" v-model="form.password" placeholder="请输入密码" @keyup.enter.native="onSubmit('form')"></el-input>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="onSubmit('form')" style="width: 250px;">登录</el-button>
@@ -40,11 +40,11 @@ export default {
     }
   },
   created () {
-    if (localStorage.getItem('token')) {
-      this.$router.push({
-        name: 'Main'
-      })
-    }
+    // if (localStorage.getItem('token')) {
+    //   this.$router.push({
+    //     name: 'Main'
+    //   })
+    // }
   },
   methods: {
     onSubmit (form) {

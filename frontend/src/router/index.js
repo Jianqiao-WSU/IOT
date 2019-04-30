@@ -11,7 +11,7 @@ import Profile from '@/components/Profile'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -62,3 +62,13 @@ export default new Router({
     }
   ]
 })
+
+// 路由跳转之前查看是否存在token
+router.beforeEach((to, from, next) => {
+  if (to.path !== '/login' && to.path !== '/register' && !localStorage.getItem('token')) {
+    return next('/login')
+  }
+  next()
+})
+
+export default router

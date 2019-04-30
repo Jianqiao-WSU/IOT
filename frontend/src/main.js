@@ -45,7 +45,7 @@ const http = axios.create()
 // 每次请求都为http头增加Authorization字段，其内容为Token
 http.interceptors.request.use(
   config => {
-    const token = this.$store.state.token
+    const token = localStorage.getItem('token')
     if (token) {
       config.headers.common['Authorization'] = token
     }

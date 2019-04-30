@@ -14,12 +14,13 @@
         <el-button type="primary" @click="onSubmit('form')" style="width: 250px;">注册</el-button>
       </el-form-item>
     </el-form>
+    <el-button type="primary" @click="goBack" style="width: 250px;">返回</el-button>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
-import qs from 'qs'
+// import axios from 'axios'
+// import qs from 'qs'
 
 export default {
   name: 'Register',
@@ -76,9 +77,9 @@ export default {
           console.log(JSON.stringify(this.registerForm))
           // this.registerForm.username = this.form.username
           // this.registerForm.password = this.form.password
-          axios.post('http://localhost:8080/api/user/register', qs.stringify({
+          this.$http.post('/api/user/register', {
             body: (JSON.stringify(this.registerForm))
-          }))
+          })
             .then((response) => {
               // 判断是否登录成功
               console.log(response)
@@ -108,6 +109,11 @@ export default {
           console.log('error submit!!')
           return false
         }
+      })
+    },
+    goBack () {
+      this.$router.push({
+        name: 'Login'
       })
     }
   }

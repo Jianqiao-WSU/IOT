@@ -38,16 +38,16 @@ export default {
   },
   methods: {
     handleSelect (key, keyPath) {
-      console.log(key, keyPath)
+      // console.log(key, keyPath)
       if (key === '1') {
         // this.homeShow = true
         this.comName = 'Profile'
-        console.log(this.comName)
+        // console.log(this.comName)
       }
       if (key === '2') {
         // this.homeShow = true
         this.comName = 'Account'
-        console.log(this.comName)
+        // console.log(this.comName)
       }
     }
   }
