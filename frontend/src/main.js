@@ -32,7 +32,7 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
-Vue.prototype.wifi = '/wifi'
+Vue.prototype.$wifi = axios
 // Vue.prototype.$axios = axios
 // axios.defaults.baseURL = 'http://www.cugcdc.cn:7777/'
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
