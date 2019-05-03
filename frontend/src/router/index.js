@@ -8,6 +8,7 @@ import Wifi from '@/components/Wifi'
 import Settings from '@/components/Settings'
 import Account from '@/components/Account'
 import Profile from '@/components/Profile'
+import Page404 from '@/views/404'
 
 Vue.use(Router)
 
@@ -59,6 +60,15 @@ const router = new Router({
           ]
         }
       ]
+    },
+    { path: '*', redirect: '/404' },
+    {
+      path: '/404',
+      name: 'Page404',
+      component: Page404,
+      meta: {
+        title: '404'
+      }
     }
   ]
 })

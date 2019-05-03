@@ -8,6 +8,10 @@ import router from './router'
 import store from './store/store'
 import axios from 'axios'
 import VueResource from 'vue-resource'
+import 'normalize.css/normalize.css' // a modern alternative to CSS resets
+import '@/styles/index.scss' // global css
+import './styles/element-variables.scss'
+// import './icons/iconfont.js'
 
 Vue.config.productionTip = false
 
@@ -42,7 +46,7 @@ Vue.prototype.$wifi = axios
 
 const http = axios.create()
 // http request 拦截器
-// 每次请求都为http头增加Authorization字段，其内容为Token
+// 每次请求都为http 头增加Authorization字段，其内容为Token
 http.interceptors.request.use(
   config => {
     const token = localStorage.getItem('token')
