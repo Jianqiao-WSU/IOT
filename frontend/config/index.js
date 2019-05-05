@@ -19,7 +19,8 @@ module.exports = {
         }
       },
       '/api': {
-        target: 'http://localhost:8080/api',
+        target: 'http://47.100.9.221:8080/api',
+        secure: false,
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''

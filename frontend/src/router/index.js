@@ -26,7 +26,7 @@ const router = new Router({
       name: 'Login',
       component: Login,
       meta: {
-        title: '登录'
+        title: '物联网数据服务平台'
       }
     },
     {

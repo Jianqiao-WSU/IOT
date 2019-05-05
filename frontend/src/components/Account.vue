@@ -75,7 +75,7 @@ export default {
         this.$refs[formName].validate((valid) => {
           if (valid) {
             this.resetPSWForm.username = localStorage.getItem('user')
-            this.$http.post('/api/user/resetPsw', {
+            this.$http.post((this.CONFIG.baseURL + '/api/user/resetPsw'), {
               body: (JSON.stringify(this.resetPSWForm))
             })
               .then((response) => {

@@ -88,7 +88,13 @@ export default {
       this.pageSize = 100
       this.currentPage = 1
       this.tableTotal = 0
-      this.$wifi.get('/wifi/FrameInfo/getAllFrameInfo')
+      console.log(this.CONFIG.wifiURL)
+      // axios.get(('http://www.cugcdc.cn:7777/FrameInfo/getAllFrameInfo'), qs.stringify({
+      //   headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+      // }))
+      this.$wifi.get((this.CONFIG.wifiURL + '/FrameInfo/getAllFrameInfo'), {
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+      })
         .then((response) => {
           // 判断是否登录成功
           this.loading = false
@@ -110,7 +116,7 @@ export default {
       this.currentPage = 1
       this.tableTotal = 0
       // 获取所有室内地图边界地图数据
-      this.$wifi.get('/wifi/BoundaryInfo/getAll')
+      this.$wifi.get(this.CONFIG.wifiURL + '/BoundaryInfo/getAll')
         .then((response) => {
           // 判断是否登录成功
           this.loading = false
@@ -130,7 +136,7 @@ export default {
       this.currentPage = 1
       this.tableTotal = 0
       // 获取所有室内墙壁数据
-      this.$wifi.get('/wifi/WallsInfo/getAll')
+      this.$wifi.get(this.CONFIG.wifiURL + '/WallsInfo/getAll')
         .then((response) => {
           // 判断是否登录成功
           this.loading = false

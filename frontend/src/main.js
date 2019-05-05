@@ -36,15 +36,32 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
-Vue.prototype.$wifi = axios
 // Vue.prototype.$axios = axios
 // axios.defaults.baseURL = 'http://www.cugcdc.cn:7777/'
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 
 // axios.defaults.headers.post['Content-type'] = 'application/json'
 // Vue.prototype.$axios = axios
+// const apiUrl = process.env.API_URL
+console.log(process.env.NODE_ENV)
+const CONFIG = {
+  baseURL: '',
+  wifiURL: ''
+}
+if (process.env.NODE_ENV === 'development') {
+  CONFIG.baseURL = 'http://47.100.9.221:8080'
+  CONFIG.wifiURL = 'http://www.cugcdc.cn:7777'
+} else if (process.env.NODE_ENV === 'production') {
+  CONFIG.baseURL = 'http://47.100.9.221:8080'
+  CONFIG.wifiURL = 'http://www.cugcdc.cn:7777'
+}
+console.log(CONFIG.baseURL)
+const http = axios.create({
+  baseURL: process.env.API_URL
+})
+Vue.prototype.CONFIG = CONFIG
+Vue.prototype.$wifi = axios
 
-const http = axios.create()
 // http request 拦截器
 // 每次请求都为http 头增加Authorization字段，其内容为Token
 http.interceptors.request.use(
