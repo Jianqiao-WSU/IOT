@@ -1,5 +1,10 @@
 <template>
   <div class="login-container">
+    <span class="svg-container" @click="goHome">
+      <svg class="logo" aria-hidden="true">
+        <use xlink:href="#icon-IOT"></use>
+      </svg>
+    </span>
     <el-form ref="form" :model="form" :rules="rules" class="login-form" auto-complete="on" label-position="left">
       <div class="title-container">
         <h3 class="title">
@@ -25,7 +30,7 @@
       <el-button type="primary" @click="onSubmit('form')" style="width:100%;margin-bottom:30px;">登录</el-button>
       <el-button type="primary" @click="register()" style="width:100%;margin-bottom:30px;margin-left:0px;">现在注册</el-button>
     </el-form>
-    <remote-js src="http://at.alicdn.com/t/font_1171828_y4tyiwzfgc9.js"></remote-js>
+    <remote-js src="http://at.alicdn.com/t/font_1171828_fh1fawhobrq.js"></remote-js>
   </div>
 </template>
 
@@ -77,8 +82,9 @@ export default {
       this.$refs[form].validate((valid) => {
         if (valid) {
           // alert('submit!')
-          console.log(this.form)
-          this.$http.post('/api/user/login', {
+          console.log(this.$http)
+          this.$http.post((this.CONFIG.baseURL + '/api/user/login'), {
+          // this.$http.post('/api/user/login', {
             username: this.form.username,
             password: this.form.password
           })
@@ -119,6 +125,11 @@ export default {
       this.$router.push({
         name: 'Register'
       })
+    },
+    goHome () {
+      this.$router.push({
+        name: 'Login'
+      })
     }
   }
 }
@@ -133,6 +144,15 @@ body {
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
+}
+.logo {
+  position: absolute;
+  left: 5px;
+  width: 5em; height: 5em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  cursor: pointer;//鼠标变小手
 }
 $bg:#283443;
 $light_gray:#fff;
