@@ -1,15 +1,18 @@
 <template>
   <div>
-    <el-button type="primary" @click="getAllFrameInfo" style="width: 250px;">frameInfo</el-button>
-    <el-button type="primary" @click="getAllBoundaryInfo" style="width: 250px;">获取所有室内地图边界地图数据</el-button>
-    <el-button type="primary" @click="getAllWallsInfo" style="width: 250px;">获取所有室内墙壁数据</el-button>
+    <el-button type="primary" @click="getAllFrameInfo" style="width: 180px;">frameInfo</el-button>
+    <el-button type="primary" @click="getAllBoundaryInfo" style="width: 180px;">获取室内地图边界数据</el-button>
+    <el-button type="primary" @click="getAllWallsInfo" style="width: 180px;">获取室内墙壁数据</el-button>
+    <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">
+      导出
+    </el-button>
     <el-table
       v-loading="loading"
       element-loading-text="拼命加载中"
       element-loading-spinner="el-icon-loading"
       element-loading-background="rgba(0, 0, 0, 0.8)"
       :data="tableData.slice((currentPage - 1) * pageSize, currentPage * pageSize)"
-      height="550"
+      height="750"
       border
       style="width: 100%">
       <el-table-column
@@ -35,6 +38,7 @@
 <script>
 // import axios from 'axios'
 // import qs from 'qs'
+import { parseTime } from '@/utils'
 
 export default {
   name: 'Wifi',
@@ -66,7 +70,10 @@ export default {
         { label: 'y1', width: '', prop: 'y1' },
         { label: 'x2', width: '', prop: 'x2' },
         { label: 'y2', width: '', prop: 'y2' }
-      ]
+      ],
+      names: ['frameInfo', 'boundaryInfo', 'wallsInfo'],
+      tableName: '',
+      downloadLoading: false
     }
   },
   created () {
@@ -101,6 +108,7 @@ export default {
           console.log(response.data.length)
           this.tableTotal = response.data.length
           this.tableLabel = this.frameInfoLabel
+          this.tableName = this.names[0]
           // this.tempData = response.data
           this.tableData = response.data
           // this.currentChangePage(response.data)
@@ -123,6 +131,7 @@ export default {
           console.log(response)
           this.tableTotal = response.data.length
           this.tableLabel = this.boundaryInfoLabel
+          this.tableName = this.names[1]
           this.tableData = response.data
         })
         .catch((error) => {
@@ -143,12 +152,51 @@ export default {
           console.log(response)
           this.tableTotal = response.data.length
           this.tableLabel = this.wallsInfoLabel
+          this.tableName = this.names[2]
           this.tableData = response.data
         })
         .catch((error) => {
           // 请求失败页面弹出失败框
           console.log(error)
         })
+    },
+    handleDownload () {
+      this.downloadLoading = true
+      import('@/vendor/Export2Excel').then(excel => {
+        let tHeader = []
+        let filterVal = []
+        let filename = ''
+        console.log(this.tableName)
+        if (this.tableName === 'frameInfo') {
+          tHeader = ['id', 'apMac', 'timeStamp', 'staMac', 'signaldBm', 'distance']
+          filterVal = ['id', 'apMac', 'timeStamp', 'staMac', 'signaldBm', 'distance']
+          filename = 'FrameInfoData'
+        } else if (this.tableName === 'boundaryInfo') {
+          tHeader = ['id', 'x', 'y']
+          filterVal = ['id', 'x', 'y']
+          filename = 'BoundaryInfoData'
+        } else {
+          tHeader = ['id', 'x1', 'y1', 'x2', 'y2']
+          filterVal = ['id', 'x1', 'y1', 'x2', 'y2']
+          filename = 'WallsInfoData'
+        }
+        const data = this.formatJson(filterVal, this.tableData)
+        excel.export_json_to_excel({
+          header: tHeader,
+          data,
+          filename: filename
+        })
+        this.downloadLoading = false
+      })
+    },
+    formatJson (filterVal, jsonData) {
+      return jsonData.map(v => filterVal.map(j => {
+        if (j === 'timestamp') {
+          return parseTime(v[j])
+        } else {
+          return v[j]
+        }
+      }))
     }
     // currentChangePage (list) {
     //   let from = (this.currentPage - 1) * this.pageSize
