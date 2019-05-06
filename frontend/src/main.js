@@ -11,6 +11,8 @@ import VueResource from 'vue-resource'
 import 'normalize.css/normalize.css' // a modern alternative to CSS resets
 import '@/styles/index.scss' // global css
 import './styles/element-variables.scss'
+import 'vue-awesome/icons'
+import Icon from 'vue-awesome/components/Icon'
 // import './icons/iconfont.js'
 
 Vue.config.productionTip = false
@@ -18,6 +20,7 @@ Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(VueResource)
 Vue.http.options.emulateJSON = true
+Vue.component('icon', Icon)
 
 /* eslint-disable no-new */
 new Vue({

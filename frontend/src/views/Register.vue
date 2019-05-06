@@ -38,7 +38,7 @@
         <el-button type="primary" @click="onSubmit('form')" style="width:100%;margin-bottom:30px;">注册</el-button>
         <el-button type="primary" @click="goBack" style="width:100%;margin-bottom:30px;margin-left:0px;">返回</el-button>
     </el-form>
-    <remote-js src="http://at.alicdn.com/t/font_1171828_fh1fawhobrq.js"></remote-js>
+    <remote-js src="http://at.alicdn.com/t/font_1171828_4imltrlgz6g.js"></remote-js>
   </div>
 </template>
 
