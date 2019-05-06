@@ -25,12 +25,12 @@
 </template>
 
 <script>
-import Account from '@/components/Account'
+// import Account from '@/components/Account'
 import Profile from '@/components/Profile'
 
 export default {
   name: 'Settings',
-  components: { Account, Profile },
+  components: { Profile },
   data () {
     return {
       comName: 'Profile'

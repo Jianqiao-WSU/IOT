@@ -5,6 +5,10 @@
 @import './sidebar.scss';
 @import './btn.scss';
 
+.el-menu-item-group__title {
+  padding: 0px 0px 0px 0px !important
+}
+
 body {
   height: 100%;
   -moz-osx-font-smoothing: grayscale;
