@@ -102,6 +102,10 @@ export default {
         .catch((error) => {
           // 请求失败页面弹出失败框
           console.log(error)
+          this.$message({
+            message: '网络错误！',
+            type: 'error'
+          })
         })
     },
     handleDownload () {

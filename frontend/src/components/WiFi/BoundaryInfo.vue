@@ -80,7 +80,6 @@ export default {
       // 获取所有室内地图边界地图数据
       this.$wifi.get(this.CONFIG.wifiURL + '/BoundaryInfo/getAll')
         .then((response) => {
-          // 判断是否登录成功
           this.loading = false
           console.log(response)
           this.tableTotal = response.data.length
@@ -91,6 +90,10 @@ export default {
         .catch((error) => {
           // 请求失败页面弹出失败框
           console.log(error)
+          this.$message({
+            message: '网络错误！',
+            type: 'error'
+          })
         })
     },
     handleDownload () {
