@@ -25,4 +25,5 @@ public interface IUserService extends IService<User> {
 
 	boolean insertUser(User user);
 	boolean resetPasswordUser(User user);
+	boolean deleteUser(User user);
 }

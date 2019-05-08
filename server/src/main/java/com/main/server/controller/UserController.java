@@ -206,4 +206,39 @@ public class UserController {
             return Json.fail(oper,"登录失败："+ae.getMessage());
         }
     }
+	
+	@UserLoginToken
+	@RequestMapping(path = "/deleteAcc", method = RequestMethod.POST)
+    @ResponseBody
+    public Json deleteAcc(@RequestParam String body) throws IOException {
+		String oper = "delete user";
+		User user = JSON.parseObject(body, User.class);
+		System.out.println(body);
+        if (StringUtils.isEmpty(user.getUsername())) {
+        	System.out.println(Json.fail(oper, "用户帐号获取异常"));
+            return Json.fail(oper, "用户帐号获取异常");
+        }
+        if (StringUtils.isEmpty(user.getPassword())) {
+        	System.out.println(Json.fail(oper, "密码不能为空"));
+            return Json.fail(oper, "密码不能为空");
+        }
+        Subject currentUser = SecurityUtils.getSubject();
+        try {
+        	currentUser.login(new UsernamePasswordToken(user.getUsername(), user.getPassword()));
+        	User userList = (User) currentUser.getPrincipal();
+	        if (userList == null) {throw new AuthenticationException();}
+	        log.info("user login: {}, sessionId: {}",userList.getUsername(),currentUser.getSession().getId());
+	        
+	        boolean success = userService.deleteUser(user);
+	        System.out.println("删除成功！");
+	        System.out.println(Json.result(oper, success));
+	        return Json.result(oper, success);
+        } catch ( IncorrectCredentialsException ice ) {
+            log.warn("用户密码不正确");
+            return Json.fail(oper,"用户密码不正确");
+        } catch ( AuthenticationException ae ) {
+        	System.out.println("登录出错");
+            return Json.fail(oper,"登录失败："+ae.getMessage());
+        }
+    }
 }

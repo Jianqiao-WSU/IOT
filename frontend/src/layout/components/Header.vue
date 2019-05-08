@@ -6,7 +6,7 @@
     <el-col :span="2" :offset="20" class="header-wrap text-r">
       <el-dropdown @command="handleCommand">
         <el-button class="no-b">
-          <i class="fa fa-user-circle" aria-hidden="true"></i> <i class="el-icon-arrow-down el-icon--right"></i>
+          {{user}} <i class="el-icon-arrow-down el-icon--right"></i>
         </el-button>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item command="a">
@@ -15,9 +15,6 @@
           <el-dropdown-item command="b">
             <icon name="sign-out-alt"/>
             登出</el-dropdown-item>
-          <el-dropdown-item command="c">
-            <i class="fa fa-wrench"></i>
-            修改密码</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
     </el-col>
@@ -31,6 +28,7 @@ import {
 export default {
   data () {
     return {
+      user: localStorage.getItem('user'),
       activeIndex: '1',
       activeIndex2: '1'
     }

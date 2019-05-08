@@ -46,5 +46,14 @@ export default [{
       type: 'menu',
       active: false
     }
+  },
+  {
+    name: 'DeleteAcc',
+    meta: {
+      index: `/Settings/DeleteAcc`,
+      title: '删除用户',
+      type: 'menu',
+      active: false
+    }
   }]
 }]

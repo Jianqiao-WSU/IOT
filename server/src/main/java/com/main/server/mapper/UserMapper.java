@@ -5,6 +5,7 @@ import com.main.server.entity.User;
 import java.io.Serializable;
 import java.util.List;
 
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -36,4 +37,7 @@ public interface UserMapper extends BaseMapper<User> {
 	
 	@Update("update user set password=#{password},salt=#{salt} where username=#{username}")
 	boolean resetPasswordUser(User user);
+	
+	@Delete("delete from user where username=#{username}")
+	boolean deleteUser(User user);
 }
