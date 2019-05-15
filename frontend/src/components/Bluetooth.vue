@@ -112,7 +112,7 @@ export default {
         let filterVal = []
         let filename = ''
         tHeader = ['id', 'x坐标', 'y坐标', 'beacon1设备码', 'beacon1信号强度', 'beacon2设备码', 'beacon2信号强度', 'beacon3设备码', 'beacon3信号强度']
-        filterVal = ['bt_id', 'x', 'y', 'beacon1', 'rssi1','beacon2' ,'rssi2', 'beacon3', 'rssi3']
+        filterVal = ['bt_id', 'x', 'y', 'beacon1', 'rssi1', 'beacon2', 'rssi2', 'beacon3', 'rssi3']
         filename = 'BluetoothData'
         const data = this.formatJson(filterVal, this.tableData)
         excel.export_json_to_excel({
@@ -141,4 +141,3 @@ export default {
   left: 50px;
 }
 </style>
-

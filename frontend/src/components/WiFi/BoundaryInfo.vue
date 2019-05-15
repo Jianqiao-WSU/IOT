@@ -133,4 +133,3 @@ export default {
   left: 50px;
 }
 </style>
-

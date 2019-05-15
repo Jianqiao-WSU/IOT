@@ -52,7 +52,7 @@ const CONFIG = {
   wifiURL: ''
 }
 if (process.env.NODE_ENV === 'development') {
-  CONFIG.baseURL = 'http://47.100.9.221:8080'
+  CONFIG.baseURL = 'http://localhost:8080'
   CONFIG.wifiURL = 'http://www.cugcdc.cn:7777'
 } else if (process.env.NODE_ENV === 'production') {
   CONFIG.baseURL = 'http://47.100.9.221:8080'

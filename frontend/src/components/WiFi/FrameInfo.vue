@@ -55,7 +55,7 @@ export default {
         { label: '移动终端地址', width: '', prop: 'staMac' },
         { label: '信号强度', width: '', prop: 'signaldBm' },
         { label: '距离', width: '', prop: 'distance' },
-        { label: '时间', width: '', prop: 'timeStamp' },
+        { label: '时间', width: '', prop: 'timeStamp' }
       ],
       names: 'frameInfo',
       tableName: '',
