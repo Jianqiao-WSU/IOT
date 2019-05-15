@@ -21,6 +21,18 @@
         <icon name="home"/>
         <span slot="title">&nbsp;首页</span>
       </el-menu-item>
+      <el-menu-item index="/video" class="no-boarder">
+        <icon name="video"/>
+        <span slot="title">&nbsp;摄像头数据</span>
+      </el-menu-item>
+      <el-menu-item index="/bluetooth" class="no-boarder">
+        <icon name="tooth"/>
+        <span slot="title">&nbsp;蓝牙数据</span>
+      </el-menu-item>
+      <el-menu-item index="/environment" class="no-boarder">
+        <icon name="cloud"/>
+        <span slot="title">&nbsp;环境传感数据</span>
+      </el-menu-item>
       <el-submenu v-for="item in menu" :index="item.name" :key="item.name" class="no-boarder">
         <template slot="title">
           <icon :name="item.meta.icon"/>&nbsp;
@@ -31,7 +43,6 @@
           </el-menu-item>
         </el-menu-item-group>
       </el-submenu>
-
     </el-menu>
   </el-col>
 </el-row>

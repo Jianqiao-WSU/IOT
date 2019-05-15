@@ -4,8 +4,9 @@ import Login from '@/views/Login'
 import Register from '@/views/Register'
 // import Main from '@/views/Main'
 import Home from '@/components/Home'
-// import Wifi from '@/components/Wifi'
-// import Settings from '@/components/Settings'
+import Video from '@/components/Video/Video'
+import Environment from '@/components/Environment'
+import Bluetooth from '@/components/Bluetooth'
 // import Account from '@/components/Account'
 // import Profile from '@/components/Profile'
 import Page404 from '@/views/404'
@@ -80,6 +81,39 @@ const router = new Router({
           meta: {
             title: '首页',
             icon: 'home'
+          }
+        },
+        {
+          path: '/video',
+          name: 'Video',
+          component: Video,
+          meta: {
+            title: '摄像头数据',
+            icon: 'video',
+            type: 'menu',
+            active: false
+          }
+        },
+        {
+          path: '/bluetooth',
+          name: 'Bluetooth',
+          component: Bluetooth,
+          meta: {
+            title: '蓝牙数据',
+            icon: 'tooth',
+            type: 'menu',
+            active: false
+          }
+        },
+        {
+          path: '/environment',
+          name: 'Environment',
+          component: Environment,
+          meta: {
+            title: '环境传感数据',
+            icon: 'cloud',
+            type: 'menu',
+            active: false
           }
         }
       ]

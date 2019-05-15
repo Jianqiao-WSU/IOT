@@ -4,7 +4,7 @@ const base = 'Main'
 export default [{
   name: 'WiFi',
   meta: {
-    title: 'WiFi数据',
+    title: 'Wi-Fi数据',
     icon: 'wifi'
   },
   sub: [{

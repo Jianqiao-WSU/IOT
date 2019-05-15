@@ -10,7 +10,7 @@
       element-loading-spinner="el-icon-loading"
       element-loading-background="rgba(0, 0, 0, 0.8)"
       :data="tableData.slice((currentPage - 1) * pageSize, currentPage * pageSize)"
-      height="750"
+      height="700"
       border
       style="width: 100%">
       <el-table-column
@@ -51,11 +51,11 @@ export default {
       loading: false,
       frameInfoLabel: [
         { label: 'id', width: '', prop: 'id' },
-        { label: 'apMac', width: '', prop: 'apMac' },
-        { label: 'timeStamp', width: '', prop: 'timeStamp' },
-        { label: 'staMac', width: '', prop: 'staMac' },
-        { label: 'signaldBm', width: '', prop: 'signaldBm' },
-        { label: 'distance', width: '', prop: 'distance' }
+        { label: '路由器地址', width: '', prop: 'apMac' },
+        { label: '移动终端地址', width: '', prop: 'staMac' },
+        { label: '信号强度', width: '', prop: 'signaldBm' },
+        { label: '距离', width: '', prop: 'distance' },
+        { label: '时间', width: '', prop: 'timeStamp' },
       ],
       names: 'frameInfo',
       tableName: '',
@@ -115,8 +115,8 @@ export default {
         let filterVal = []
         let filename = ''
         console.log(this.tableName)
-        tHeader = ['id', 'apMac', 'timeStamp', 'staMac', 'signaldBm', 'distance']
-        filterVal = ['id', 'apMac', 'timeStamp', 'staMac', 'signaldBm', 'distance']
+        tHeader = ['id', '路由器地址', '移动终端地址', '信号强度', '距离', '时间']
+        filterVal = ['id', 'apMac', 'staMac', 'signaldBm', 'distance', 'timeStamp']
         filename = 'FrameInfoData'
         const data = this.formatJson(filterVal, this.tableData)
         excel.export_json_to_excel({

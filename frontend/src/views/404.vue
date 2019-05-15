@@ -48,7 +48,7 @@ export default {
             this.timer = null
             // 跳转的页面写在此处
             this.$router.push({
-              name: 'Login'
+              name: 'Main'
             })
           }
         }, 1000)

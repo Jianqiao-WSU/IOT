@@ -10,7 +10,7 @@
       element-loading-spinner="el-icon-loading"
       element-loading-background="rgba(0, 0, 0, 0.8)"
       :data="tableData.slice((currentPage - 1) * pageSize, currentPage * pageSize)"
-      height="750"
+      height="700"
       border
       style="width: 100%">
       <el-table-column
