@@ -13,6 +13,7 @@ import '@/styles/index.scss' // global css
 import './styles/element-variables.scss'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
+import 'video.js/dist/video-js.css'
 // import './icons/iconfont.js'
 
 Vue.config.productionTip = false
@@ -53,6 +54,7 @@ const CONFIG = {
 }
 if (process.env.NODE_ENV === 'development') {
   CONFIG.baseURL = 'http://localhost:8080'
+  // CONFIG.baseURL = 'http://47.100.9.221:8080'
   CONFIG.wifiURL = 'http://www.cugcdc.cn:7777'
 } else if (process.env.NODE_ENV === 'production') {
   CONFIG.baseURL = 'http://47.100.9.221:8080'
