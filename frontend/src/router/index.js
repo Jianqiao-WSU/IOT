@@ -4,7 +4,6 @@ import Login from '@/views/Login'
 import Register from '@/views/Register'
 // import Main from '@/views/Main'
 import Home from '@/components/Home'
-import Video from '@/components/Video/Video'
 import Environment from '@/components/Environment'
 import Bluetooth from '@/components/Bluetooth'
 // import Account from '@/components/Account'
@@ -14,6 +13,19 @@ import Layout from '@/layout'
 import menus from '@/config/menu-config'
 
 Vue.use(Router)
+
+let VideoChildren = []
+menus.forEach((item) => {
+  item.sub.forEach((cell) => {
+    // console.log(cell)
+    VideoChildren.push({
+      path: cell.name,
+      name: cell.name,
+      meta: cell.meta,
+      component: () => import(`@/components/Video/${cell.name}`)
+    })
+  })
+})
 
 let WiFiChildren = []
 menus.forEach((item) => {
@@ -42,6 +54,8 @@ menus.forEach((item) => {
 })
 
 const router = new Router({
+  mode: 'history',
+  // base: 'IOT',
   routes: [
     {
       path: '/',
@@ -84,17 +98,6 @@ const router = new Router({
           }
         },
         {
-          path: '/video',
-          name: 'Video',
-          component: Video,
-          meta: {
-            title: '摄像头数据',
-            icon: 'video',
-            type: 'menu',
-            active: false
-          }
-        },
-        {
           path: '/bluetooth',
           name: 'Bluetooth',
           component: Bluetooth,
@@ -134,6 +137,15 @@ const router = new Router({
       //     ]
       //   }
       // ]
+    },
+    {
+      path: '/video',
+      name: 'Video',
+      component: Layout,
+      meta: {
+        title: '摄像头数据'
+      },
+      children: VideoChildren
     },
     {
       path: '/wifi',

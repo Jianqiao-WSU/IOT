@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-button type="primary" @click="getAllBoundaryInfo" style="width: 180px;">获取环境传感数据</el-button>
+    <el-button type="primary" @click="getEnvironmentData" style="width: 180px;">获取环境传感数据</el-button>
     <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">
       导出
     </el-button>
@@ -50,11 +50,12 @@ export default {
       pageSize: 100,
       loading: false,
       boundaryInfoLabel: [
-        { label: 'id', width: '', prop: 'id' },
+        { label: '设备ID', width: '', prop: 'deviceId' },
         { label: '气温(℃)', width: '', prop: 'temperature' },
         { label: '湿度(%)', width: '', prop: 'humidity' },
-        { label: '气压(hPa)', width: '', prop: 'pressure' },
-        { label: '时间', width: '', prop: 'timeStamp' }
+        { label: '气压(Pa)', width: '', prop: 'pressure' },
+        { label: '光照强度(Lux)', width: '', prop: 'sun' },
+        { label: '时间', width: '', prop: 'time' }
       ],
       downloadLoading: false
     }
@@ -72,7 +73,7 @@ export default {
       this.currentPage = val
       // this.currentChangePage(this.tableDataBegin);
     },
-    getAllBoundaryInfo () {
+    getEnvironmentData () {
       this.loading = true
       this.pageSize = 100
       this.currentPage = 1
@@ -101,8 +102,8 @@ export default {
         let tHeader = []
         let filterVal = []
         let filename = ''
-        tHeader = ['id', '气温', '湿度', '气压', '时间']
-        filterVal = ['id', 'temperature', 'humidity', 'pressure', 'timeStamp']
+        tHeader = ['设备ID', '气温', '湿度', '气压', '光照强度', '时间']
+        filterVal = ['deviceId', 'temperature', 'humidity', 'pressure', 'sun', 'time']
         filename = 'EnvironmentData'
         const data = this.formatJson(filterVal, this.tableData)
         excel.export_json_to_excel({

@@ -1,7 +1,6 @@
 <template>
   <div>
-    {{msg}}
-    <el-button type="primary" @click="main" style="width:100%;margin-bottom:30px;">登录</el-button>
+    <h1 align="center">{{msg}}</h1>
   </div>
 </template>
 
@@ -11,7 +10,7 @@ export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Home'
+      msg: '欢迎使用面向室内智能空间感知的物联网数据服务平台'
     }
   },
   methods: {
@@ -23,3 +22,7 @@ export default {
   }
 }
 </script>
+
+<style>
+
+</style>

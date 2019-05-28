@@ -26,4 +26,10 @@ public class EnvirServiceImpl extends ServiceImpl<EnvirMapper, Environment> impl
 		// TODO Auto-generated method stub
 		return envirMapper.findAll();
 	}
+
+	@Override
+	public boolean insertData(Environment environment) {
+		// TODO Auto-generated method stub
+		return envirMapper.insertData(environment);
+	}
 }

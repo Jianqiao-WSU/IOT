@@ -7,18 +7,21 @@ import java.util.*;
 @TableName("Environment")
 public class Environment {
 	
-    private String id;	//数据id
+    private String deviceId;	//数据id
     private String temperature;	//气温
     private String humidity;    //湿度
     private String pressure;	//气压
-    private Date timeStamp;		//数据创建时间
+    private String RSSI;
+    private String sun;
+    private String time;		//数据创建时间
     
-    public String getId() { 
-    	return id; 
+    
+    public String getDeviceId() { 
+    	return deviceId; 
     }
     
-    public void setId(String id) {
-    	this.id =  id; 
+    public void setDeviceId(String deviceId) {
+    	this.deviceId =  deviceId; 
     }
     
     public String getTemperature() { 
@@ -45,11 +48,27 @@ public class Environment {
     	this.pressure =  pressure; 
     }
     
-    public Date getTimeStamp() { 
-    	return timeStamp; 
+    public String getRSSI() { 
+    	return RSSI; 
     }
     
-    public void setTimeStamp(Date timeStamp) { 
-    	this.timeStamp =  timeStamp; 
+    public void setRSSI(String RSSI) { 
+    	this.RSSI =  RSSI; 
+    }
+    
+    public String getSun() { 
+    	return sun; 
+    }
+    
+    public void setSun(String sun) { 
+    	this.sun =  sun; 
+    }
+    
+    public String getTime() { 
+    	return time; 
+    }
+    
+    public void setTime(String time) { 
+    	this.time =  time; 
     }
 }

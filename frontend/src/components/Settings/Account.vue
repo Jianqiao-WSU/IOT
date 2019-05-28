@@ -86,11 +86,6 @@ export default {
                     message: '密码重设成功！',
                     type: 'success'
                   })
-                  // this.$store.commit('setToken', response.data.token)
-                  // this.$store.commit('setUser', response.data.uid)
-                  // this.$router.push({
-                  //   name: 'Main'
-                  // })
                 } else {
                   this.$message.error(response.data.msg)
                 }

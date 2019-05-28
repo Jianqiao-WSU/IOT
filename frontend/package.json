@@ -20,6 +20,8 @@
     "file-saver": "^2.0.1",
     "normalize.css": "^8.0.1",
     "scss": "^0.2.4",
+    "video.js": "^7.5.4",
+    "videojs-contrib-hls": "^5.15.0",
     "vue": "^2.5.2",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.0.1",

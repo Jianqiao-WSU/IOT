@@ -22,5 +22,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface IEnvirService extends IService<Environment> {
 
 	List<Environment> findAll();
-
+	
+	boolean insertData(Environment environment);
 }

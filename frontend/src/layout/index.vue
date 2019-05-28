@@ -36,7 +36,7 @@ export default {
 .v3-header {
   height: 40px;
   border-bottom: 1px solid #eee;
-  background: #1890ff
+  background: #ffffff
 }
 .v3-main {
   margin-left: 200px;

@@ -9,9 +9,6 @@
           {{user}} <i class="el-icon-arrow-down el-icon--right"></i>
         </el-button>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item command="a">
-            <icon name="user"/>
-            查看个人信息</el-dropdown-item>
           <el-dropdown-item command="b">
             <icon name="sign-out-alt"/>
             登出</el-dropdown-item>

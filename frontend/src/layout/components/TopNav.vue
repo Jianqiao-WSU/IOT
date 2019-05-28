@@ -44,6 +44,7 @@ export default {
   methods: {
     addCachedView (view) {
       if (view.meta.type === 'menu') {
+        console.log(view.meta.type)
         this.$store.dispatch('addNavTags', view)
       }
     },
@@ -68,6 +69,7 @@ export default {
       // this.activeTag(nextTag)
     },
     activeTag (tag) {
+      console.log(tag)
       this.$router.push(tag)
     }
   },

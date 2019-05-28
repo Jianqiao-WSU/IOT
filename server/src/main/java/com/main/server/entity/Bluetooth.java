@@ -7,23 +7,21 @@ import java.util.*;
 @TableName("Bluetooth")
 public class Bluetooth {
 	
-    private String BT_id;	//数据id
+    private String id;	//数据id
     private String x;	//x坐标
     private String y;    //y坐标
-    private String beacon1;	//设备1编号
-    private String rssi1;	//设备1信号强度
-    private String beacon2;	//设备2编号
-    private String rssi2;	//设备2信号强度
-    private String beacon3;	//设备3编号
-    private String rssi3;	//设备3信号强度
+    private String uuid;	//设备编号
+    private String major;	//设备1信号强度
+    private String minor;	//设备2编号
+    private String measuredpower;	//设备2信号强度
     private Date timeStamp;		//数据创建时间
     
-    public String getBT_id() { 
-    	return BT_id; 
+    public String getId() { 
+    	return id; 
     }
     
-    public void setBT_id(String BT_id) {
-    	this.BT_id =  BT_id; 
+    public void setId(String id) {
+    	this.id =  id; 
     }
     
     public String getX() { 
@@ -42,53 +40,38 @@ public class Bluetooth {
     	this.y =  y; 
     }
     
-    public String getBeacon1() { 
-    	return beacon1; 
+    public String getUuid() { 
+    	return uuid; 
     }
     
-    public void setBeacon1(String beacon1) { 
-    	this.beacon1 =  beacon1; 
+    public void setUuid(String uuid) { 
+    	this.uuid =  uuid; 
     }
     
-    public String getRssi1() { 
-    	return rssi1; 
+    public String getMajor() { 
+    	return major; 
     }
     
-    public void setRssi1(String rssi1) { 
-    	this.rssi1 =  rssi1; 
+    public void setMajor(String major) { 
+    	this.major =  major; 
     }
     
-    public String getBeacon2() { 
-    	return beacon2; 
+    public String getMinor() { 
+    	return minor; 
     }
     
-    public void setBeacon2(String beacon2) { 
-    	this.beacon2 =  beacon2; 
+    public void setMinor(String minor) { 
+    	this.minor =  minor; 
     }
     
-    public String getRssi2() { 
-    	return rssi2; 
+    public String getMeasuredpower() { 
+    	return measuredpower; 
     }
     
-    public void setRssi2(String rssi2) { 
-    	this.rssi2 =  rssi2; 
+    public void setMeasuredpower(String measuredpower) { 
+    	this.measuredpower =  measuredpower; 
     }
     
-    public String getBeacon3() { 
-    	return beacon3; 
-    }
-    
-    public void setBeacon3(String beacon3) { 
-    	this.beacon3 =  beacon3; 
-    }
-    
-    public String getRssi3() { 
-    	return rssi3; 
-    }
-    
-    public void setRssi3(String rssi3) { 
-    	this.rssi3 =  rssi3; 
-    }
     public Date getTimeStamp() { 
     	return timeStamp; 
     }

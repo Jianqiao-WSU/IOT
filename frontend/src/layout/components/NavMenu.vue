@@ -1,6 +1,7 @@
 <template>
   <el-row class="tac">
-  <el-col :span="24" class="h100">
+    <el-col :span="24" class="h100">
+      <logo :collapse="!isNavMenuOpen"/>
     <!-- <el-radio-group v-model="isCollapse" style="margin-bottom: 20px;">
       <el-radio-button :label="false">展开</el-radio-button>
       <el-radio-button :label="true">收起</el-radio-button>
@@ -21,15 +22,11 @@
         <icon name="home"/>
         <span slot="title">&nbsp;首页</span>
       </el-menu-item>
-      <el-menu-item index="/video" class="no-boarder">
-        <icon name="video"/>
-        <span slot="title">&nbsp;摄像头数据</span>
-      </el-menu-item>
-      <el-menu-item index="/bluetooth" class="no-boarder">
+      <el-menu-item index="/bluetooth" key="bluetooth" active="false" class="no-boarder">
         <icon name="tooth"/>
         <span slot="title">&nbsp;蓝牙数据</span>
       </el-menu-item>
-      <el-menu-item index="/environment" class="no-boarder">
+      <el-menu-item index="/environment" key="environment" active="false" class="no-boarder">
         <icon name="cloud"/>
         <span slot="title">&nbsp;环境传感数据</span>
       </el-menu-item>
@@ -67,12 +64,14 @@
 <script>
 import { mapGetters, mapState } from 'vuex'
 import menu from '@/config/menu-config'
+import Logo from './Logo'
 
 export default {
+  components: { Logo },
   data () {
     return {
       menu: menu,
-      isCollapse: true
+      isCollapse: false
     }
   },
   computed: {

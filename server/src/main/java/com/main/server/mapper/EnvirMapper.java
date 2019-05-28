@@ -20,4 +20,7 @@ import com.baomidou.mybatisplus.core.toolkit.Constants;
 public interface EnvirMapper extends BaseMapper<Environment> {
 	@Select("select *from environment")
 	List<Environment> findAll();	//以ID查询
+	
+	@Insert("insert into environment(deviceId,temperature,humidity,pressure,sun,time,RSSI) values(#{deviceId},#{temperature},#{humidity},#{pressure},#{sun},#{time},#{RSSI})")
+	boolean insertData(Environment environment);
 }

@@ -1,0 +1,371 @@
+2019/05/22 12:39:27 [emerg] 18464#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 12:39:27 [emerg] 18464#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 12:39:27 [emerg] 18464#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 12:39:27 [emerg] 18464#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 12:39:27 [emerg] 18464#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 12:39:27 [emerg] 18464#0: still could not bind()
+2019/05/22 12:39:35 [error] 18430#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:40:11 [notice] 18472#0: signal process started
+2019/05/22 12:40:20 [error] 18476#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:40:21 [error] 18476#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:40:22 [error] 18476#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:40:22 [error] 18476#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:40:23 [error] 18476#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:40:29 [error] 18476#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:42:17 [notice] 18557#0: signal process started
+2019/05/22 12:42:40 [error] 18566#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:42:42 [error] 18566#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:42:43 [error] 18566#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:45:08 [notice] 18604#0: signal process started
+2019/05/22 12:46:48 [notice] 18641#0: signal process started
+2019/05/22 12:46:55 [error] 18645#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:46:57 [error] 18645#0: *1 "/root/IOT/frontend/index.html" is forbidden (13: Permission denied), client: 219.139.249.66, server: 47.100.9.221, request: "GET / HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 12:48:40 [notice] 18679#0: signal process started
+2019/05/22 13:07:51 [error] 18682#0: *7 open() "/root/IOT/frontend/live" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /live HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:08:23 [error] 18682#0: *7 open() "/root/IOT/frontend/test" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /test HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:08:27 [error] 18682#0: *7 open() "/root/IOT/frontend/test" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /test HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:08:29 [error] 18682#0: *7 open() "/root/IOT/frontend/test" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /test HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:11:25 [notice] 18824#0: signal process started
+2019/05/22 13:13:56 [notice] 18865#0: signal process started
+2019/05/22 13:14:06 [notice] 18880#0: signal process started
+2019/05/22 13:14:06 [error] 18880#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2019/05/22 13:19:13 [error] 18884#0: *5 open() "/root/IOT/frontend/test" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /test HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:19:19 [error] 18884#0: *5 open() "/root/IOT/frontend/live" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /live HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:30:33 [emerg] 18994#0: "application" directive is not allowed here in /usr/local/nginx/conf/nginx.conf:25
+2019/05/22 13:30:39 [emerg] 18997#0: "application" directive is not allowed here in /usr/local/nginx/conf/nginx.conf:25
+2019/05/22 13:32:40 [emerg] 19027#0: unexpected "}" in /usr/local/nginx/conf/nginx.conf:29
+2019/05/22 13:36:15 [emerg] 19076#0: unexpected "}" in /usr/local/nginx/conf/nginx.conf:30
+2019/05/22 13:37:12 [notice] 19083#0: signal process started
+2019/05/22 13:37:22 [error] 19086#0: *1 open() "/root/IOT/frontend/live" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /live HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:37:40 [error] 19086#0: *1 open() "/root/IOT/frontend/live" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /live HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:38:05 [error] 19086#0: *1 directory index of "/usr/local/nginx/html/hls/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:38:11 [error] 19086#0: *1 open() "/usr/local/nginx/html/hls/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:38:17 [error] 19086#0: *1 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:38:24 [error] 19086#0: *1 open() "/usr/local/nginx/html/hls/test" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:40:30 [error] 19086#0: *3 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:40:57 [error] 19086#0: *3 directory index of "/usr/local/nginx/html/hls/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:42:50 [error] 19086#0: *6 open() "/usr/local/nginx/html/hls/test" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:42:54 [error] 19086#0: *6 directory index of "/usr/local/nginx/html/hls/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:47:10 [emerg] 19185#0: invalid number of arguments in "root" directive in /usr/local/nginx/conf/nginx.conf:86
+2019/05/22 13:47:41 [notice] 19188#0: signal process started
+2019/05/22 13:50:21 [error] 19192#0: *12 open() "/usr/local/nginx/html/hls/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:50:37 [error] 19192#0: *12 "/usr/local/nginx/html/hls/hls/index.html" is not found (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/hls/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:50:40 [error] 19192#0: *12 directory index of "/usr/local/nginx/html/hls/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:51:47 [error] 19192#0: *12 open() "/usr/local/nginx/html/hls/mystream.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/mystream.m3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:51:57 [error] 19192#0: *12 open() "/usr/local/nginx/html/hls/hls/mystream.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/hls/mystream.m3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:52:01 [error] 19192#0: *12 directory index of "/usr/local/nginx/html/hls/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:53:42 [notice] 19248#0: signal process started
+2019/05/22 13:53:52 [error] 19252#0: *2 directory index of "/usr/local/nginx/html/hls/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:54:00 [error] 19252#0: *2 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:55:59 [error] 19252#0: *4 open() "/usr/local/nginx/html/hls/test" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:56:01 [error] 19252#0: *4 open() "/usr/local/nginx/html/hls/test" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:56:20 [error] 19252#0: *4 directory index of "/usr/local/nginx/html/hls/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 13:56:25 [error] 19252#0: *4 open() "/usr/local/nginx/html/hls/test" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 14:01:49 [error] 19252#0: *9 open() "/usr/local/nginx/html/hls/test" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 14:01:57 [error] 19252#0: *9 open() "/usr/local/nginx/html/hls/testm3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/testm3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 14:06:12 [error] 19252#0: *10 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 14:06:15 [error] 19252#0: *10 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 14:10:22 [error] 19252#0: *12 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 14:10:25 [error] 19252#0: *12 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 14:10:38 [error] 19252#0: *12 open() "/usr/local/nginx/html/hls/test" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 14:10:48 [error] 19252#0: *12 directory index of "/usr/local/nginx/html/hls/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 14:22:24 [error] 19252#0: *13 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:24:09 [error] 19252#0: *15 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:26:51 [error] 19252#0: *23 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:26:55 [error] 19252#0: *23 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:00 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:04 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:10 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:14 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:19 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:24 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:29 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:34 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:40 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:44 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:49 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:54 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:27:59 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:04 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:09 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:14 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:19 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:24 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:29 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:34 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:39 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:44 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:49 [error] 19252#0: *24 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:55 [error] 19252#0: *25 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:28:59 [error] 19252#0: *25 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:29:04 [error] 19252#0: *25 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:29:09 [error] 19252#0: *25 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:29:14 [error] 19252#0: *25 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:29:19 [error] 19252#0: *25 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:29:25 [error] 19252#0: *26 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:29:29 [error] 19252#0: *26 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:29:35 [error] 19252#0: *27 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:29:39 [error] 19252#0: *27 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:29:44 [error] 19252#0: *29 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:29:48 [error] 19252#0: *29 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:31:56 [error] 19252#0: *31 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:00 [error] 19252#0: *31 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:05 [error] 19252#0: *31 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:10 [error] 19252#0: *31 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:15 [error] 19252#0: *33 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:19 [error] 19252#0: *33 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:24 [error] 19252#0: *33 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:28 [error] 19252#0: *34 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:32 [error] 19252#0: *34 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:36 [error] 19252#0: *35 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:41 [error] 19252#0: *35 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:45 [error] 19252#0: *35 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:49 [error] 19252#0: *36 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:53 [error] 19252#0: *36 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:32:57 [error] 19252#0: *37 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:01 [error] 19252#0: *37 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:05 [error] 19252#0: *37 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:09 [error] 19252#0: *38 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:13 [error] 19252#0: *38 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:17 [error] 19252#0: *39 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:21 [error] 19252#0: *39 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:25 [error] 19252#0: *40 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:29 [error] 19252#0: *40 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:33 [error] 19252#0: *40 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:37 [error] 19252#0: *41 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:41 [error] 19252#0: *41 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:46 [error] 19252#0: *42 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:50 [error] 19252#0: *42 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:54 [error] 19252#0: *42 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:33:58 [error] 19252#0: *43 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:02 [error] 19252#0: *43 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:06 [error] 19252#0: *44 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:10 [error] 19252#0: *44 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:14 [error] 19252#0: *44 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:18 [error] 19252#0: *45 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:23 [error] 19252#0: *45 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:27 [error] 19252#0: *46 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:31 [error] 19252#0: *46 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:35 [error] 19252#0: *47 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:39 [error] 19252#0: *47 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:43 [error] 19252#0: *47 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:47 [error] 19252#0: *48 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:51 [error] 19252#0: *48 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:55 [error] 19252#0: *49 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:34:59 [error] 19252#0: *49 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:03 [error] 19252#0: *49 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:08 [error] 19252#0: *50 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:12 [error] 19252#0: *50 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:17 [error] 19252#0: *51 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:21 [error] 19252#0: *51 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:25 [error] 19252#0: *53 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:29 [error] 19252#0: *53 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:34 [error] 19252#0: *53 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:40 [error] 19252#0: *54 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:47 [error] 19252#0: *54 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:51 [error] 19252#0: *54 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:35:57 [error] 19252#0: *56 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:01 [error] 19252#0: *56 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:06 [error] 19252#0: *57 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:10 [error] 19252#0: *57 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:16 [error] 19252#0: *58 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:20 [error] 19252#0: *58 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:26 [error] 19252#0: *59 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:31 [error] 19252#0: *59 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:36 [error] 19252#0: *60 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:40 [error] 19252#0: *60 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:46 [error] 19252#0: *61 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:50 [error] 19252#0: *61 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:36:56 [error] 19252#0: *62 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:37:09 [error] 19252#0: *63 open() "/usr/local/nginx/html/hls/test.m3u8" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /hls/test.m3u8 HTTP/1.1", host: "47.100.9.221:8088", referrer: "http://localhost:8088/"
+2019/05/22 14:47:49 [emerg] 19827#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 14:47:49 [emerg] 19827#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 14:47:49 [emerg] 19827#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 14:47:49 [emerg] 19827#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 14:47:49 [emerg] 19827#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 14:47:49 [emerg] 19827#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 14:47:49 [emerg] 19827#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 14:47:49 [emerg] 19827#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 14:47:49 [emerg] 19827#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 14:47:49 [emerg] 19827#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 14:47:49 [emerg] 19827#0: still could not bind()
+2019/05/22 14:48:21 [notice] 19832#0: signal process started
+2019/05/22 14:53:32 [notice] 19907#0: signal process started
+2019/05/22 14:57:50 [notice] 19992#0: signal process started
+2019/05/22 15:01:03 [notice] 20059#0: signal process started
+2019/05/22 15:03:57 [notice] 20106#0: signal process started
+2019/05/22 15:05:13 [notice] 20145#0: signal process started
+2019/05/22 15:05:13 [error] 20145#0: open() "/run/nginx.pid" failed (2: No such file or directory)
+2019/05/22 15:06:04 [notice] 20150#0: signal process started
+2019/05/22 15:07:33 [notice] 20193#0: signal process started
+2019/05/22 15:07:35 [emerg] 20194#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:07:35 [emerg] 20194#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:07:35 [emerg] 20194#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:07:35 [emerg] 20194#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:07:35 [emerg] 20194#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:07:35 [emerg] 20194#0: still could not bind()
+2019/05/22 15:07:39 [notice] 20196#0: signal process started
+2019/05/22 15:07:39 [error] 20196#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2019/05/22 15:07:45 [emerg] 20197#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:07:45 [emerg] 20197#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:07:45 [emerg] 20197#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:07:45 [emerg] 20197#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:07:45 [emerg] 20197#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:07:45 [emerg] 20197#0: still could not bind()
+2019/05/22 15:07:54 [notice] 20199#0: signal process started
+2019/05/22 15:07:54 [error] 20199#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2019/05/22 15:08:13 [notice] 20201#0: signal process started
+2019/05/22 15:08:13 [error] 20201#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2019/05/22 15:08:19 [emerg] 20202#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:08:19 [emerg] 20202#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:08:19 [emerg] 20202#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:08:19 [emerg] 20202#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:08:19 [emerg] 20202#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:08:19 [emerg] 20202#0: still could not bind()
+2019/05/22 15:08:43 [emerg] 20207#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:08:43 [emerg] 20207#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:08:43 [emerg] 20207#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:08:43 [emerg] 20207#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:08:43 [emerg] 20207#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:08:43 [emerg] 20207#0: still could not bind()
+2019/05/22 15:09:10 [notice] 20210#0: signal process started
+2019/05/22 15:09:10 [error] 20210#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2019/05/22 15:09:13 [notice] 20211#0: signal process started
+2019/05/22 15:09:13 [error] 20211#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2019/05/22 15:09:32 [notice] 20216#0: signal process started
+2019/05/22 15:09:49 [emerg] 20220#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:09:49 [emerg] 20220#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:09:49 [emerg] 20220#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:09:49 [emerg] 20220#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:09:49 [emerg] 20220#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:09:49 [emerg] 20220#0: still could not bind()
+2019/05/22 15:10:05 [emerg] 20222#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:10:05 [emerg] 20222#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:10:05 [emerg] 20222#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:10:05 [emerg] 20222#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:10:05 [emerg] 20222#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 15:10:05 [emerg] 20222#0: still could not bind()
+2019/05/22 15:11:47 [notice] 20250#0: signal process started
+2019/05/22 15:11:47 [error] 20250#0: open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
+2019/05/22 15:12:00 [notice] 20256#0: signal process started
+2019/05/22 15:13:00 [notice] 20269#0: signal process started
+2019/05/22 15:14:52 [notice] 20304#0: signal process started
+2019/05/22 15:15:37 [notice] 20333#0: signal process started
+2019/05/22 15:15:45 [error] 20336#0: *1 open() "/root/IOT/frontend/stat" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /stat HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:16:10 [notice] 20346#0: signal process started
+2019/05/22 15:16:45 [error] 20350#0: *1 open() "/root/IOT/frontend/login" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /login HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:16:50 [notice] 20356#0: signal process started
+2019/05/22 15:16:54 [error] 20359#0: *1 open() "/root/IOT/frontend/login" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /login HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:18:15 [notice] 20393#0: signal process started
+2019/05/22 15:18:25 [error] 20396#0: *1 open() "/root/IOT/frontend/login" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /login HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:19:54 [emerg] 20430#0: open() "/usr/local/nginx/conf/nginx.conf" failed (2: No such file or directory)
+2019/05/22 15:19:58 [emerg] 20432#0: open() "/usr/local/nginx/conf/nginx.conf" failed (2: No such file or directory)
+2019/05/22 15:20:00 [emerg] 20433#0: open() "/usr/local/nginx/conf/nginx.conf" failed (2: No such file or directory)
+2019/05/22 15:20:10 [notice] 20435#0: signal process started
+2019/05/22 15:20:14 [error] 20438#0: *1 open() "/usr/local/nginx/html/login" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /login HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:20:25 [error] 20438#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:23:40 [notice] 20482#0: signal process started
+2019/05/22 15:23:45 [error] 20485#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:23:46 [error] 20485#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:26:55 [notice] 20525#0: signal process started
+2019/05/22 15:30:10 [notice] 20565#0: signal process started
+2019/05/22 15:33:54 [notice] 20610#0: signal process started
+2019/05/22 15:39:17 [notice] 20649#0: signal process started
+2019/05/22 15:43:15 [notice] 20733#0: signal process started
+2019/05/22 15:44:23 [emerg] 20763#0: unknown directive "s" in /usr/local/nginx/conf/nginx.conf:63
+2019/05/22 15:44:40 [emerg] 20765#0: unknown directive "s" in /usr/local/nginx/conf/nginx.conf:63
+2019/05/22 15:45:06 [notice] 20771#0: signal process started
+2019/05/22 15:45:13 [error] 20774#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:45:27 [error] 20774#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:46:23 [notice] 20785#0: signal process started
+2019/05/22 15:46:43 [error] 20808#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:46:45 [error] 20808#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:46:45 [error] 20808#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:46:46 [error] 20808#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:47:20 [notice] 20813#0: signal process started
+2019/05/22 15:47:30 [error] 20816#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:47:44 [error] 20816#0: *3 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 15:50:13 [notice] 20852#0: signal process started
+2019/05/22 15:59:13 [notice] 20965#0: signal process started
+2019/05/22 16:03:54 [notice] 21041#0: signal process started
+2019/05/22 16:09:52 [notice] 21167#0: signal process started
+2019/05/22 16:10:05 [emerg] 21181#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 16:10:05 [emerg] 21181#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 16:10:05 [emerg] 21181#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 16:10:05 [emerg] 21181#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 16:10:05 [emerg] 21181#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 16:10:05 [emerg] 21181#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 16:10:05 [emerg] 21181#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 16:10:05 [emerg] 21181#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 16:10:05 [emerg] 21181#0: bind() to 0.0.0.0:1935 failed (98: Address already in use)
+2019/05/22 16:10:05 [emerg] 21181#0: bind() to 0.0.0.0:8088 failed (98: Address already in use)
+2019/05/22 16:10:05 [emerg] 21181#0: still could not bind()
+2019/05/22 16:10:08 [error] 21172#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:10:22 [error] 21172#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:10:22 [error] 21172#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:10:34 [error] 21172#0: *1 open() "/usr/local/nginx/html/kkk" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /kkk HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:11:12 [notice] 21207#0: signal process started
+2019/05/22 16:11:21 [error] 21210#0: *1 open() "/usr/local/nginx/html/k" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /k HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:11:58 [notice] 21215#0: signal process started
+2019/05/22 16:12:01 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:02 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:02 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:02 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:03 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:03 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:03 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:03 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:03 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:03 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:04 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:04 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:04 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:04 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:04 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:05 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:05 [error] 21218#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:32 [notice] 21229#0: signal process started
+2019/05/22 16:12:35 [error] 21232#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:35 [error] 21232#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:12:43 [error] 21232#0: *1 open() "/usr/local/nginx/html/frontend/index.html" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:13:14 [notice] 21244#0: signal process started
+2019/05/22 16:13:17 [error] 21247#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:13:18 [error] 21247#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:13:18 [error] 21247#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:13:43 [notice] 21251#0: signal process started
+2019/05/22 16:13:46 [error] 21254#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:13:47 [error] 21254#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:15:27 [notice] 21292#0: signal process started
+2019/05/22 16:15:39 [error] 21295#0: *1 open() "/root/IOT/frontend/IOT" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:19:01 [notice] 21345#0: signal process started
+2019/05/22 16:19:20 [error] 21348#0: *1 could not find named location "@router", client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:19:47 [notice] 21359#0: signal process started
+2019/05/22 16:19:50 [error] 21362#0: *1 could not find named location "@router", client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:23:26 [error] 21362#0: *6 could not find named location "@router", client: 219.139.249.66, server: 47.100.9.221, request: "GET /login HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:27:01 [error] 21362#0: *7 could not find named location "@router", client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:29:53 [notice] 21462#0: signal process started
+2019/05/22 16:29:56 [error] 21465#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:30:01 [error] 21465#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:30:02 [error] 21465#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:30:18 [error] 21465#0: *1 could not find named location "@router", client: 219.139.249.66, server: 47.100.9.221, request: "GET /I44 HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:31:41 [notice] 21505#0: signal process started
+2019/05/22 16:31:44 [error] 21508#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:31:44 [error] 21508#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:31:45 [error] 21508#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:31:45 [error] 21508#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:31:45 [error] 21508#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:31:45 [error] 21508#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:31:45 [error] 21508#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:31:46 [error] 21508#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:31:46 [error] 21508#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:31:48 [error] 21508#0: *1 open() "/usr/local/nginx/html/login" failed (2: No such file or directory), client: 219.139.249.66, server: 47.100.9.221, request: "GET /login HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:31:55 [error] 21508#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:33:09 [notice] 21523#0: signal process started
+2019/05/22 16:33:12 [error] 21526#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:33:13 [error] 21526#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:33:13 [error] 21526#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:35:39 [notice] 21568#0: signal process started
+2019/05/22 16:35:42 [error] 21571#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:36:25 [notice] 21597#0: signal process started
+2019/05/22 16:36:29 [error] 21600#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"
+2019/05/22 16:37:06 [error] 21600#0: *1 directory index of "/root/IOT/frontend/IOT/" is forbidden, client: 219.139.249.66, server: 47.100.9.221, request: "GET /IOT/ HTTP/1.1", host: "47.100.9.221:8088"

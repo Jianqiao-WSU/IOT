@@ -20,7 +20,6 @@ async function listDir (dir) {
 // 上传文件
 async function put (option) {
   try {
-    // for (let i = 0; i < option.file.length; i++) {
     let name = 'video/' + option.file.name
     let result = await client.put(name, option.file)
     console.log(result)

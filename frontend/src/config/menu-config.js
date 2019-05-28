@@ -2,6 +2,29 @@
 const base = 'Main'
 
 export default [{
+  name: 'Video',
+  meta: {
+    title: '摄像头数据',
+    icon: 'video'
+  },
+  sub: [{
+    name: 'Live',
+    meta: {
+      index: `/Video/Live`,
+      title: '摄像头直播',
+      type: 'menu',
+      active: false
+    }
+  },{
+    name: 'VideoList',
+    meta: {
+      index: `/Video/VideoList`,
+      title: '视频列表',
+      type: 'menu',
+      active: false
+    }
+  }]
+}, {
   name: 'WiFi',
   meta: {
     title: 'Wi-Fi数据',
@@ -42,7 +65,7 @@ export default [{
     name: 'Account',
     meta: {
       index: `/Settings/Account`,
-      title: '账号',
+      title: '更改密码',
       type: 'menu',
       active: false
     }
