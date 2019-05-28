@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-button type="primary" @click="getAllBoundaryInfo" style="width: 180px;">获取蓝牙数据</el-button>
+    <el-button type="primary" @click="getBluetoothInfo" style="width: 180px;">获取蓝牙数据</el-button>
     <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">
       导出
     </el-button>
@@ -49,16 +49,15 @@ export default {
       tableTotal: 0,
       pageSize: 100,
       loading: false,
-      boundaryInfoLabel: [
-        { label: 'id', width: '', prop: 'bt_id' },
+      bluetoothInfoLabel: [
+        { label: 'id', width: '', prop: 'id' },
         { label: 'x坐标', width: '', prop: 'x' },
         { label: 'y坐标', width: '', prop: 'y' },
-        { label: 'beacon1设备码', width: '', prop: 'beacon1' },
-        { label: 'beacon1信号强度', width: '', prop: 'rssi1' },
-        { label: 'beacon2设备码', width: '', prop: 'beacon2' },
-        { label: 'beacon2信号强度', width: '', prop: 'rssi2' },
-        { label: 'beacon3设备码', width: '', prop: 'beacon3' },
-        { label: 'beacon3信号强度', width: '', prop: 'rssi3' }
+        { label: '设备编号', width: '', prop: 'uuid' },
+        { label: '组', width: '', prop: 'major' },
+        { label: '组内编号', width: '', prop: 'minor' },
+        { label: 'iBeacon与接收器距离为1m时的信号强度', width: '', prop: 'measuredpower' },
+        { label: '时间戳', width: '', prop: 'timeStamp' }
       ],
       downloadLoading: false
     }
@@ -76,7 +75,7 @@ export default {
       this.currentPage = val
       // this.currentChangePage(this.tableDataBegin);
     },
-    getAllBoundaryInfo () {
+    getBluetoothInfo () {
       this.loading = true
       this.pageSize = 100
       this.currentPage = 1
@@ -87,12 +86,12 @@ export default {
           this.loading = false
           console.log(response.data)
           this.tableTotal = response.data.length
-          this.tableLabel = this.boundaryInfoLabel
-          response.data.forEach(function (element) {
-            element.beacon1 = element.beacon1.padStart(11, '0')
-            element.beacon2 = element.beacon2.padStart(11, '0')
-            element.beacon3 = element.beacon3.padStart(11, '0')
-          })
+          this.tableLabel = this.bluetoothInfoLabel
+          // response.data.forEach(function (element) {
+          //   element.beacon1 = element.beacon1.padStart(11, '0')
+          //   element.beacon2 = element.beacon2.padStart(11, '0')
+          //   element.beacon3 = element.beacon3.padStart(11, '0')
+          // })
           console.log(response.data)
           this.tableData = response.data
         })
@@ -111,8 +110,8 @@ export default {
         let tHeader = []
         let filterVal = []
         let filename = ''
-        tHeader = ['id', 'x坐标', 'y坐标', 'beacon1设备码', 'beacon1信号强度', 'beacon2设备码', 'beacon2信号强度', 'beacon3设备码', 'beacon3信号强度']
-        filterVal = ['bt_id', 'x', 'y', 'beacon1', 'rssi1', 'beacon2', 'rssi2', 'beacon3', 'rssi3']
+        tHeader = ['id', 'x坐标', 'y坐标', '设备编号', '组', '组内编号', 'iBeacon与接收器距离为1m时的信号强度', '时间戳']
+        filterVal = ['id', 'x', 'y', 'uuid', 'major', 'minor', 'measuredpower', 'timeStamp']
         filename = 'BluetoothData'
         const data = this.formatJson(filterVal, this.tableData)
         excel.export_json_to_excel({

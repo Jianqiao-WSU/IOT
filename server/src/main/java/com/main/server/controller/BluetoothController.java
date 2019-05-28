@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.Console;
 import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
@@ -25,7 +26,7 @@ public class BluetoothController {
 	HttpServletResponse responce;
 	
     @GetMapping(path = "/bluetooth")
-    public List<Bluetooth> getAllStudentInfo(){
+    public List<Bluetooth> getBluetoothInfo(){
         return bluetoothService.findAll();
     }
 }

@@ -11,5 +11,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 public interface BluetoothMapper extends BaseMapper<Bluetooth> {
 	@Select("select *from bluetooth")
-	List<Bluetooth> findAll();	//以ID查询
+	List<Bluetooth> findAll();
 }
