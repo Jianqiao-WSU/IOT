@@ -81,9 +81,9 @@ export default {
     }
     return {
       registerForm: {
-        username: 'admin',
-        password: '1234',
-        passwordConf: '1234'
+        username: '',
+        password: '',
+        passwordConf: ''
       },
       rules: {
         username: [
@@ -122,8 +122,6 @@ export default {
                   message: '注册成功，请登录！',
                   type: 'success'
                 })
-                // this.$store.commit('setToken', response.data.token)
-                // this.$store.commit('setUser', response.data.username)
                 this.$router.push({
                   name: 'Login'
                 })

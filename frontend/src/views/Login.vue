@@ -84,7 +84,6 @@ export default {
           // alert('submit!')
           console.log(this.$http)
           this.$http.post((this.CONFIG.baseURL + '/api/user/login'), {
-          // this.$http.post('/api/user/login', {
             username: this.form.username,
             password: this.form.password
           })
@@ -96,12 +95,10 @@ export default {
                   message: '登录成功！',
                   type: 'success'
                 })
-                // this.$store.commit('setToken', response.data.token)
-                // this.$store.commit('setUser', response.data.username)
                 window.localStorage['token'] = JSON.stringify(response.data.token)
                 window.localStorage['user'] = response.data.username
                 this.$router.push({
-                  name: 'Main'
+                  name: 'Home'
                 })
               } else {
                 this.$message.error(response.data.msg)
